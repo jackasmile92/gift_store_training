@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gift Store</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/svg_path.js"></script>
+
+    <link rel="stylesheet" href="./css/font.css">
+
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -12,7 +19,7 @@
         <div class="header">
             <div class="header__nav">
                 <div class="header__nav-logo">
-                    <img class="header__nav-img" src="" alt="">
+                    <img class="header__nav-img logo" src="./src/img/Logo.svg" alt="">
                 </div>
                 <div class="header__nav-links">
                     <a class="header__nav-link" href="#">Home</a>
@@ -20,7 +27,9 @@
                     <a class="header__nav-link" href="#">Services</a>
                     <a class="header__nav-link" href="#">Blogs</a>
                 </div>
-                <button class="header__button">Gift Finder</button>
+                <div class="header__button-wrap">
+                    <button class="header__button">Gift Finder</button>
+                </div>
             </div>
             <div class="header__main">
                 <div class="header__main-item">
@@ -32,8 +41,8 @@
                         <button class="header__item-button header__item-button--reverse">Find gift now</button>
                     </div>
                 </div>
-                <div class="header__main-picture"></div>
-                <div class="header__main-picture"></div>
+                <div class="header__main-picture" style="background-image: url('./src/img/Background_1.jpg');"></div>
+                <div class="header__main-picture" style="background-image: url('./src/img/Background_2.png');"></div>
                 <div class="header__main-item">
                     <div class="header__item-content">
                         <div class="header__item-tittle">How we work</div>
@@ -89,8 +98,8 @@
                     <div class="banner__text-bottom">Sign up or contact us</div>
                 </div>
                 <div class="banner__buttons">
-                    <button class="banner__button"></button>
-                    <button class="banner__button banner__button--reverse"></button>
+                    <button class="banner__button">Find gift now</button>
+                    <button class="banner__button banner__button--reverse">how it works</button>
                 </div>
             </div>
         </div>
@@ -118,7 +127,9 @@
                 <div class="footer__links">
                     <a class="footer__link" href=""></a>
                     <a class="footer__link" href=""></a>
-                    <img class="footer__logo" src="" alt="">
+                    <div class="footer__logo-wrapp">
+                        <img class="footer__logo logo" src="./src/img/Logo_orange.svg" alt="">
+                    </div>
                     <a class="footer__link" href=""></a>
                     <a class="footer__link" href=""></a>
                 </div>
@@ -137,6 +148,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
