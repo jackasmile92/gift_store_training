@@ -1,62 +1,3 @@
-body,
-html {
-  padding: 0px;
-  margin: 0px;
-  cursor: default;
-  background-color: #000000;
-  font-family: Gilroy;
-}
-
-:focus {
-  outline: none;
-}
-
-button,
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.page_wrap {
-  max-width: 1440px;
-  margin: 0 auto;
-  background-color: #FFFFFF;
-}
-
-button {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.logo {
-  width: 41px;
-  height: 39px;
-}
-
-.block__header {
-  max-width: 1440px;
-  height: 247px;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  color: #000000;
-}
-
-.block__header-title {
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.block__header-quote {
-  font-size: 18px;
-  margin-top: 23px;
-}
-
 .header__item {
   color: #000000;
 }
@@ -158,10 +99,74 @@ button {
   color: #F7941E;
 }
 
+.header__button:hover {
+  background-color: #F7941E;
+  color: #FFFFFF;
+}
+
 .header__button-wrap {
   grid-area: button;
   display: grid;
   justify-content: right;
+}
+
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  cursor: default;
+  background-color: #000000;
+  font-family: Gilroy;
+}
+
+:focus {
+  outline: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page_wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+button {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 41px;
+  height: 39px;
+}
+
+.block__header {
+  max-width: 1440px;
+  height: 247px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+.block__header-title {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.block__header-quote {
+  font-size: 18px;
+  margin-top: 23px;
 }
 
 .gifts__items {

@@ -1,15 +1,6 @@
-$max_width: 1440px; //100vw; 
+@import './variables.scss';
+@import './header.scss';
 
-$background_color_black: #000000;
-$background_color_dark: #231F20;
-$background_color_white: #FFFFFF;
-$background_color_gray: #F1F1F2;
-$background_color_gray-light: #FAFAFA;
-$background_color_orange: #F7941E;
-
-$font_color_black: #000000;
-$font_color_white: #FFFFFF;
-$font_color_orange:#F7941E;
 
 body,
 html {
@@ -71,120 +62,6 @@ button {
     }
 }
 
-
-.header {
-    &__item {
-        color: $font_color_black;
-
-        &-tittle {
-            font-size: 32px;
-            margin-bottom: 23px;
-
-            &--big {
-                font-size: 56px;
-                line-height: 69px;
-                width: 433px;
-                font-weight: bold;
-                margin-bottom: 36px;
-            }
-        }
-
-        &-text {
-            max-width: 441px;
-            text-align: justify;
-            line-height: 140.62%;
-        }
-
-        &-button {
-            height: 60px;
-            width: 200px;
-            border: 1px solid $background_color_orange;
-            border-radius: 5px;
-            color: $font_color_orange;
-            margin-top: 35px;
-
-            &:nth-child(1) {
-                margin-top: 52px;
-            }
-
-            &:hover {
-                background-color: $background_color_orange;
-                color: $font_color_white;
-
-            }
-        }
-    }
-
-    &__main {
-        max-width: inherit;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
-        background-color: $background_color_gray;
-
-        &-picture {
-            height: 700px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-
-        &-item {
-            display: grid;
-            justify-content: center;
-            align-content: center;
-        }
-    }
-
-
-    &__nav {
-        max-width: inherit;
-        padding-left: 80px;
-        padding-right: 40px;
-        height: 116px;
-        display: grid;
-        align-content: center;
-        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-        grid-template-areas:
-            'logo . links . button';
-    }
-
-    &__nav-logo {
-        grid-area: logo;
-    }
-
-    &__nav-link {
-        font-size: 18px;
-        line-height: 22px;
-        color: $font_color_black;
-
-        &s {
-            grid-area: links;
-            display: flex;
-            justify-content: space-between;
-            margin-left: -40px;
-        }
-    }
-
-    &__button {
-        height: 38px;
-        width: 140px;
-        margin-right: 0;
-        border: 1px solid $background_color_orange;
-        box-sizing: border-box;
-        background-color: $background_color_white;
-        border-radius: 5px;
-        color: $font_color_orange;
-
-        &-wrap {
-            grid-area: button;
-            display: grid;
-            justify-content: right;
-        }
-    }
-}
 
 .gifts {
     &__items {

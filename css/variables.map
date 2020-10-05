@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"$max_width: 1440px; //100vw; \r\n\r\n$background_color_black: #000000;\r\n$background_color_dark: #231F20;\r\n$background_color_white: #FFFFFF;\r\n$background_color_gray: #F1F1F2;\r\n$background_color_gray-light: #FAFAFA;\r\n$background_color_orange: #F7941E;\r\n\r\n$font_color_black: #000000;\r\n$font_color_white: #FFFFFF;\r\n$font_color_orange:#F7941E;"
+	],
+	"names": [],
+	"mappings": ""
+}
