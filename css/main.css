@@ -18,7 +18,7 @@ a {
 }
 
 .page_wrap {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
@@ -34,7 +34,7 @@ button {
 }
 
 .block__header {
-  max-width: 1440px;
+  max-width: 1920px;
   height: 247px;
   display: grid;
   justify-content: center;
@@ -161,7 +161,7 @@ button {
 }
 
 .gifts__items {
-  max-width: 1440px;
+  max-width: 1920px;
   padding-left: 135px;
   padding-right: 135px;
   padding-bottom: 137px;
@@ -211,7 +211,7 @@ button {
 }
 
 .banner {
-  max-width: 1440px;
+  max-width: 1920px;
   height: 240px;
   background-color: #F7941E;
   display: grid;
@@ -266,4 +266,95 @@ button {
   grid-template-columns: 1fr 1fr;
   align-content: center;
   justify-content: space-around;
+}
+
+.big-blog {
+  grid-area: bigblog;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #231F20;
+  color: #FFFFFF;
+}
+
+.big-blog__img {
+  height: 370px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.big-blog__text {
+  padding-top: 63px;
+  padding-left: 78px;
+  padding-bottom: 49px;
+  display: grid;
+}
+
+.big-blog__author {
+  font-size: 14px;
+  line-height: 140.62%;
+}
+
+.big-blog__title {
+  font-size: 48px;
+  line-height: 58px;
+  max-width: 492px;
+  margin-top: -20px;
+}
+
+.big-blog__more {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 140.62%;
+  align-self: end;
+}
+
+.blog {
+  padding-left: 48px;
+  padding-right: 48px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  color: #000000;
+  line-height: 140.62%;
+}
+
+.blog__tittle {
+  max-width: 474px;
+  font-size: 24px;
+}
+
+.blog__text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.blog__more {
+  font-size: 14px;
+  color: #000000;
+}
+
+.blog:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.blogs__container {
+  max-width: 1920px;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-bottom: 80px;
+  padding-top: 7px;
+  display: grid;
+  grid-template-areas: 'bigblog bigblog' 'smal1 smal2';
+  grid-template-rows: 370px 290px;
+  grid-gap: 40px 30px;
+}
+
+.blog:nth-child(1) {
+  grid-area: smal1;
+}
+
+.blog:nth-child(2) {
+  grid-area: smal2;
 }

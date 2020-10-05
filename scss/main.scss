@@ -1,4 +1,4 @@
-$max_width: 1440px; //100vw; 
+$max_width: 1920px; //100vw; 
 
 $background_color_black: #000000;
 $background_color_dark: #231F20;
@@ -280,7 +280,7 @@ button {
         background-color: $background_color_dark;
         color: $font_color_white;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             justify-self: end;
         }
 
@@ -295,8 +295,115 @@ button {
             grid-area: bbuttons;
             display: grid;
             grid-template-columns: 1fr 1fr;
+
+
             align-content: center;
             justify-content: space-around;
         }
+    }
+}
+
+.big-blog {
+    grid-area: bigblog;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: $background_color_dark;
+    color: $font_color_white;
+
+
+    &__img {
+        height: 370px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__text {
+        padding-top: 63px;
+        padding-left: 78px;
+        padding-bottom: 49px;
+        display: grid;
+
+    }
+
+    &__author {
+        font-size: 14px;
+        line-height: 140.62%;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        max-width: 492px;
+        margin-top: -20px;
+    }
+
+    &__more {
+        color: $font_color_white;
+        font-size: 18px;
+        line-height: 140.62%;
+        align-self: end;
+    }
+
+}
+
+.blog {
+    padding-left: 48px;
+    padding-right: 48px;
+    display: grid;
+align-content: center;
+justify-content: center;
+
+    color: $font_color_black;
+    line-height: 140.62%;
+
+    &__tittle {
+        max-width: 474px;
+        font-size: 24px;
+
+    }
+
+    &__text {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    &__more{
+        font-size: 14px;
+        color: $font_color_black;
+    }
+
+
+    &:hover {
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    &s {
+        &__container {
+            max-width: $max_width;
+            padding-left: 135px;
+            padding-right: 135px;
+            padding-bottom: 80px;
+            padding-top: 7px;
+
+            display: grid;
+            grid-template-areas:
+                'bigblog bigblog'
+                'smal1 smal2';
+
+            grid-template-rows: 370px 290px;
+            grid-gap: 40px 30px;
+        }
+    }
+
+
+    &:nth-child(1) {
+        grid-area: smal1;
+    }
+
+    &:nth-child(2) {
+        grid-area: smal2;
     }
 }
