@@ -18,7 +18,7 @@ a {
 }
 
 .page_wrap {
-  max-width: 100vw;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
@@ -31,6 +31,26 @@ button {
 .logo {
   width: 41px;
   height: 39px;
+}
+
+.block__header {
+  max-width: 1440px;
+  height: 247px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+.block__header-title {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.block__header-quote {
+  font-size: 18px;
+  margin-top: 23px;
 }
 
 .header__item {
@@ -138,4 +158,112 @@ button {
   grid-area: button;
   display: grid;
   justify-content: right;
+}
+
+.gifts__items {
+  max-width: 1440px;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-bottom: 137px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+
+.gifts__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 270px 166px;
+  max-width: 270px;
+  background-color: #FAFAFA;
+}
+
+.gifts__item:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  background-color: #FFFFFF;
+}
+
+.gifts__item-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gifts__item-bottom {
+  padding: 24px;
+  display: grid;
+  align-content: space-between;
+  color: #000000;
+}
+
+.gifts__item-ocassion {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.gifts__item-more {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.banner {
+  max-width: 1440px;
+  height: 240px;
+  background-color: #F7941E;
+  display: grid;
+  align-content: center;
+}
+
+.banner__content {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 2fr 1fr 3fr 1fr;
+  grid-template-areas: '. btext . bbuttons . ';
+}
+
+.banner__text {
+  grid-area: btext;
+  color: #000000;
+}
+
+.banner__text-top {
+  font-size: 32px;
+  line-height: 140.62%;
+  font-weight: bold;
+}
+
+.banner__text-bottom {
+  font-size: 32px;
+  line-height: 140.62%;
+}
+
+.banner__button {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #231F20;
+  color: #FFFFFF;
+}
+
+.banner__button:nth-child(1) {
+  justify-self: end;
+}
+
+.banner__button--reverse {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #F7941E;
+  margin-left: 16px;
+}
+
+.banner__buttons {
+  grid-area: bbuttons;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: space-around;
 }
